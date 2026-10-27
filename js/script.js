@@ -13,7 +13,15 @@ function setup ()
     amplitude.setInput(song);
 }
 
+function mousePressed()
+{
+    song.play();
+}
+
 function draw ()
 {
     const level = amplitude.getLevel();
+    if (!amplitude) return;
+    background(level * 50);
+    console.log(level);
 }
