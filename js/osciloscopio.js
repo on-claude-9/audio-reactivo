@@ -33,9 +33,6 @@ function draw ()
 
 async function mousePressed()
 {
-    /*await userStartAudio();
-    mic.start();*/
-
     if (!song) return false;
 
     song.play();
